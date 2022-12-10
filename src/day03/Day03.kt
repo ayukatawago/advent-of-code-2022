@@ -1,3 +1,7 @@
+package day03
+
+import readInput
+
 fun main() {
     fun Char.getScore(): Int =
         when {
@@ -34,7 +38,7 @@ fun main() {
     }
 
 
-    val testInput = readInput("Day03_test")
+    val testInput = readInput("day03/Day03_test")
 
     println(part1(testInput))
     println(part2(testInput))

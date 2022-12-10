@@ -1,3 +1,6 @@
+package day01
+
+import readInput
 import kotlin.math.max
 
 fun main() {
@@ -33,7 +36,7 @@ fun main() {
         return caloriesList.sorted().takeLast(3).sum()
     }
 
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("day01/Day01_test")
 
     println(part1(testInput))
     println(part2(testInput))

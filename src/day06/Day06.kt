@@ -1,5 +1,9 @@
+package day06
+
+import readInput
+
 fun main() {
-    val testInput = readInput("Day06_test")
+    val testInput = readInput("day06/Day06_test")
 
     testInput.forEach {
         println(solution(it, 4))

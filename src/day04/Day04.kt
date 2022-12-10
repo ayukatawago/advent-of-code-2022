@@ -1,3 +1,7 @@
+package day04
+
+import readInput
+
 fun main() {
     fun String.toIntSetPair(): Pair<Set<Int>, Set<Int>>? {
         val splitInput = split(',')
@@ -34,7 +38,7 @@ fun main() {
     }
 
 
-    val testInput = readInput("Day04_test")
+    val testInput = readInput("day04/Day04_test")
     val testPairList: List<Pair<Set<Int>, Set<Int>>> = testInput.mapNotNull { it.toIntSetPair() }
 
     println(part1(testPairList))

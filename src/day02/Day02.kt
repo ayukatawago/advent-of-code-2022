@@ -1,3 +1,7 @@
+package day02
+
+import readInput
+
 private enum class Selection(val score: Int) {
     ROCK(1),
     PAPER(2),
@@ -72,7 +76,7 @@ fun main() {
         return score
     }
 
-    val testInput = readInput("Day02_test")
+    val testInput = readInput("day02/Day02_test")
     println(part1(testInput))
     println(part2(testInput))
 }

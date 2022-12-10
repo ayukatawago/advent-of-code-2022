@@ -1,3 +1,6 @@
+package day05
+
+import readInput
 import java.util.Stack
 
 private data class Action(val amount: Int, val from: Int, val to: Int) {
@@ -74,7 +77,7 @@ fun main() {
         return stackArray.map { it.pop() }.joinToString("")
     }
 
-    val testInput = readInput("Day05_test")
+    val testInput = readInput("day05/Day05_test")
 
     println(part1(testInput))
     println(part2(testInput))

@@ -1,3 +1,6 @@
+package day08
+
+import readInput
 import kotlin.math.min
 
 fun main() {
@@ -100,7 +103,7 @@ fun main() {
         return maxScenicScore
     }
 
-    val testInput = readInput("Day08_test")
+    val testInput = readInput("day08/Day08_test")
 
     val grid = testInput.map { it.map { it.code - '0'.code } }
     println(part1(grid))
